@@ -17,9 +17,9 @@ my_dict = {
 
 }
 user_lis = ['shadan_fcb', 'mmehndiratta']
-'''
-Function declaration to get your own info
-'''
+
+#Function declaration to get your own info
+
 
 
 def self_info():
@@ -39,9 +39,9 @@ def self_info():
         print 'Status code other than 200 received!'
 
 
-'''
-Function declaration to get the ID of a user by username
-'''
+
+#Function declaration to get the ID of a user by username
+
 
 
 def get_user_id(insta_username):
@@ -59,9 +59,9 @@ def get_user_id(insta_username):
         exit()
 
 
-'''
-Function declaration to get the info of a user by username
-'''
+
+#Function declaration to get the info of a user by username
+
 
 
 def get_user_info(insta_username):
@@ -85,9 +85,9 @@ def get_user_info(insta_username):
         print 'Status code other than 200 received!'
 
 
-'''
-Function declaration to get your recent post
-'''
+
+#Function declaration to get your recent post
+
 
 
 def get_own_post():
@@ -133,9 +133,8 @@ def get_user_post(insta_username):
         print 'Status code other than 200 received!'
 
 
-'''
-Function declaration to get the ID of the recent post of a user by username
-'''
+
+#Function declaration to get the ID of the recent post of a user by username
 
 
 def get_post_id(insta_username):
@@ -296,7 +295,8 @@ def start_bot():
         print "g.Unlike the recent post of a user\n"
         print "h.Make a comment on the recent post of a user\n"
         print "i.Delete negative comments from the recent post of a user\n"
-        print "j.SHOW SUBTREND OF FOOD EATEN "
+        print "j.SHOW SUBTREND OF FOOD EATEN \n"
+        print "k:To exit"
 
         choice = raw_input("Enter you choice: ")
         if choice == "a":
@@ -325,6 +325,8 @@ def start_bot():
             delete_negative_comment(insta_username)
         elif choice == "j":
             get_users_post(user)
+        elif choice=="k":
+            exit()
 
 
         else:
